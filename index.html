@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda en línea de componentes para PC y electrónicos. Ofrecemos los mejores productos al mejor precio.">
+    <title>PCComponentes - Componentes para PC y Electrónicos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header role="banner">
+        <div class="header-top">
+            <h1>PCComponentes</h1>
+            <nav role="navigation" aria-label="Menú principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button type="submit">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main role="main">
+        <!-- Sección de inicio -->
+        <section id="inicio" aria-labelledby="titulo-inicio">
+            <h2 id="titulo-inicio">Bienvenido a PCComponentes</h2>
+            <p>Encuentra los mejores componentes para PC y electrónicos al mejor precio.</p>
+            <a href="#productos" class="btn">Ver productos</a>
+        </section>
+
+        <!-- Sección de productos -->
+        <section id="productos" aria-labelledby="titulo-productos">
+            <h2 id="titulo-productos">Nuestros Productos</h2>
+            <div class="grid-productos">
+                <article class="producto" aria-labelledby="producto1">
+                    <img src="procesador.jpg" alt="Procesador AMD Ryzen 5 5600X" class="producto-imagen">
+                    <h3 id="producto1">Procesador AMD Ryzen 5 5600X</h3>
+                    <p>Potente procesador para gaming y productividad.</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+                <article class="producto" aria-labelledby="producto2">
+                    <img src="tarjeta-grafica.jpg" alt="Tarjeta gráfica NVIDIA GeForce RTX 3080" class="producto-imagen">
+                    <h3 id="producto2">Tarjeta gráfica NVIDIA GeForce RTX 3080</h3>
+                    <p>Rendimiento extremo para juegos en 4K.</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de video -->
+        <section id="video" aria-labelledby="titulo-video">
+            <h2 id="titulo-video">Video de Presentación</h2>
+            <video controls aria-label="Video de presentación de PCComponentes">
+                <source src="presentacion.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+
+        <!-- Sección de audio -->
+        <section id="audio" aria-labelledby="titulo-audio">
+            <h2 id="titulo-audio">Audio Informativo</h2>
+            <audio controls aria-label="Audio informativo sobre PCComponentes">
+                <source src="informacion.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contacto</h2>
+            <form id="formulario-contacto" aria-labelledby="titulo-formulario">
+                <h3 id="titulo-formulario">Formulario de contacto</h3>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 PCComponentes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
