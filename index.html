@@ -13,15 +13,15 @@
             <h1>PCComponentes</h1>
             <nav role="navigation" aria-label="Menú principal">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio" tabindex="0">Inicio</a></li>
+                    <li><a href="#productos" tabindex="1">Productos</a></li>
+                    <li><a href="#nosotros" tabindex="2">Nosotros</a></li>
+                    <li><a href="#contacto" tabindex="3">Contacto</a></li>
                 </ul>
             </nav>
             <div class="search-bar">
-                <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
-                <button type="submit">Buscar</button>
+                <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" tabindex="4">
+                <button type="submit" tabindex="5">Buscar</button>
             </div>
         </div>
     </header>
@@ -30,7 +30,29 @@
         <section id="inicio" aria-labelledby="titulo-inicio">
             <h2 id="titulo-inicio">Bienvenido a PCComponentes</h2>
             <p>Encuentra los mejores componentes para PC y electrónicos al mejor precio.</p>
-            <a href="#productos" class="btn">Ver productos</a>
+            <a href="#productos" class="btn" tabindex="6">Ver productos</a>
+        </section>
+
+        <!-- Carrusel de productos -->
+        <section id="carrusel" aria-labelledby="titulo-carrusel">
+            <h2 id="titulo-carrusel">Productos Destacados</h2>
+            <div class="carrusel-contenedor">
+                <div class="carrusel-slides">
+                    <div class="carrusel-slide" tabindex="7">
+                        <img src="images/Procesador.png" alt="Procesador AMD Ryzen 5 5600X" class="carrusel-imagen">
+                        <h3>Procesador AMD Ryzen 5 5600X</h3>
+                        <p>Potente procesador para gaming y productividad.</p>
+                    </div>
+                    <div class="carrusel-slide" tabindex="8">
+                        <img src="images/Tarejta Grafica.png" alt="Tarjeta gráfica NVIDIA GeForce RTX 3080" class="carrusel-imagen">
+                        <h3>Tarjeta gráfica NVIDIA GeForce RTX 3080</h3>
+                        <p>Rendimiento extremo para juegos en 4K.</p>
+                    </div>
+                </div>
+                <button class="carrusel-anterior" aria-label="Anterior" tabindex="9">Anterior</button> <!-- &#10094 Logo < -->
+                <button class="carrusel-siguiente" aria-label="Siguiente" tabindex="10">Siguiente</button> <!-- &#10095 Logo > -->
+                <button class="carrusel-pausa" aria-label="Pausar carrusel" tabindex="11">Pausar</button>
+            </div>
         </section>
 
         <!--Productos -->
@@ -41,13 +63,13 @@
                     <img src="images/Procesador.png" alt="Procesador AMD Ryzen 5 5600X" class="producto-imagen">
                     <h3 id="producto1">Procesador AMD Ryzen 5 5600X</h3>
                     <p>Potente procesador para gaming y productividad.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-comprar" tabindex="12">Comprar</button>
                 </article>
                 <article class="producto" aria-labelledby="producto2">
                     <img src="images/Tarejta Grafica.png" alt="Tarjeta gráfica NVIDIA GeForce RTX 3080" class="producto-imagen">
                     <h3 id="producto2">Tarjeta gráfica NVIDIA GeForce RTX 3080</h3>
                     <p>Rendimiento extremo para juegos en 4K.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-comprar" tabindex="13">Comprar</button>
                 </article>
             </div>
         </section>
@@ -55,7 +77,7 @@
         <!--Video -->
         <section id="video" aria-labelledby="titulo-video">
             <h2 id="titulo-video">Video de Presentación</h2>
-            <video controls aria-label="Video de presentación de PCComponentes">
+            <video controls aria-label="Video de presentación de PCComponentes" tabindex="14">
                 <source src="video/Video.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
@@ -64,7 +86,7 @@
         <!--Audio -->
         <section id="audio" aria-labelledby="titulo-audio">
             <h2 id="titulo-audio">Audio Informativo</h2>
-            <audio controls aria-label="Audio informativo sobre PCComponentes">
+            <audio controls aria-label="Audio informativo sobre PCComponentes" tabindex="15">
                 <source src="audio/audio.mp3" type="audio/mpeg">
                 Tu navegador no soporta el elemento de audio.
             </audio>
@@ -76,12 +98,12 @@
             <form id="formulario-contacto" aria-labelledby="titulo-formulario">
                 <h3 id="titulo-formulario">Formulario de contacto</h3>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" required tabindex="16">
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required tabindex="17">
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar</button>
+                <textarea id="mensaje" name="mensaje" required tabindex="18"></textarea>
+                <button type="submit" tabindex="19">Enviar Formulario</button>
             </form>
         </section>
     </main>
